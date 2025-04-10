@@ -59,6 +59,7 @@ Need help integrating with your PHP application? [Open an issue](https://github.
     - [Text Captcha](#text-captcha)
     - [reCAPTCHA v2](#recaptcha-v2)
     - [reCAPTCHA v3](#recaptcha-v3)
+    - [hCaptcha](#hcaptcha)
     - [FunCaptcha](#funcaptcha)
     - [GeeTest](#geetest)
     - [GeeTest V4](#geetest-v4)
@@ -201,6 +202,25 @@ $result = $solver->recaptcha([
     'sitekey' => '6Le-wvkSVVABCPBMRTvw0Q4Muexq1bi0DJwx_mJ-',
     'url'     => 'https://mysite.com/page/with/recaptcha',
     'version' => 'v3',
+]);
+```
+
+### hCaptcha
+
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_hcaptcha)</sup>
+
+Use this method to solve hCaptcha and obtain a token to bypass the protection.
+
+```php
+$result = $solver->hcaptcha([
+    'sitekey'  => 'bf8ccfbf-6a05-45f6-982a-7a7964c2f50c',
+    'url'      => 'https://portalunico.siscomex.gov.br',
+    'invisible'=> 0,
+    'domain'   => 'hcaptcha.com',
+    // 'proxy' => [
+    //     'type' => 'HTTPS',
+    //     'uri'  => 'login:password@IP_address:PORT'
+    // ]
 ]);
 ```
 
