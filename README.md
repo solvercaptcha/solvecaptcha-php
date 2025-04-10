@@ -1,13 +1,13 @@
 ![php](https://github.com/user-attachments/assets/dbb4d41a-3de3-422a-8791-35fd81809b06)
 
-<a href="https://github.com/solvecaptcha/solvecaptcha-python"><img src="https://github.com/user-attachments/assets/37e1d860-033b-4cf3-a158-468fc6b4debc" width="82" height="30"></a>
-<a href="https://github.com/solvecaptcha/solvecaptcha-javascript"><img src="https://github.com/user-attachments/assets/4d3b4541-34b2-4ed2-a687-d694ce67e5a6" width="36" height="30"></a>
-<a href="https://github.com/solvecaptcha/solvecaptcha-go"><img src="https://github.com/user-attachments/assets/ab22182e-6cb2-41fa-91f4-d5e89c6d7c6f" width="63" height="30"></a>
-<a href="https://github.com/solvecaptcha/solvecaptcha-ruby"><img src="https://github.com/user-attachments/assets/0270d56f-79b0-4c95-9b09-4de89579914b" width="75" height="30"></a>
-<a href="https://github.com/solvecaptcha/solvecaptcha-cpp"><img src="https://github.com/user-attachments/assets/36de8512-acfd-44fb-bb1f-b7c793a3f926" width="45" height="30"></a>
-<a href="https://github.com/solvecaptcha/solvecaptcha-php"><img src="https://github.com/user-attachments/assets/c27d7db5-c20f-47c1-b252-96ee76503b9e" width="52" height="30"></a>
-<a href="https://github.com/solvecaptcha/solvecaptcha-java"><img src="https://github.com/user-attachments/assets/a3d923f6-4fec-4c07-ac50-e20da6370911" width="50" height="30"></a>
-<a href="https://github.com/solvecaptcha/solvecaptcha-csharp"><img src="https://github.com/user-attachments/assets/f4d449de-780b-49ed-bb0a-b70c82ec4b32" width="38" height="30"></a>
+<a href="https://github.com/solvercaptcha/solvecaptcha-python"><img src="https://github.com/user-attachments/assets/37e1d860-033b-4cf3-a158-468fc6b4debc" width="82" height="30"></a>
+<a href="https://github.com/solvercaptcha/solvecaptcha-javascript"><img src="https://github.com/user-attachments/assets/4d3b4541-34b2-4ed2-a687-d694ce67e5a6" width="36" height="30"></a>
+<a href="https://github.com/solvercaptcha/solvecaptcha-go"><img src="https://github.com/user-attachments/assets/ab22182e-6cb2-41fa-91f4-d5e89c6d7c6f" width="63" height="30"></a>
+<a href="https://github.com/solvercaptcha/solvecaptcha-ruby"><img src="https://github.com/user-attachments/assets/0270d56f-79b0-4c95-9b09-4de89579914b" width="75" height="30"></a>
+<a href="https://github.com/solvercaptcha/solvecaptcha-cpp"><img src="https://github.com/user-attachments/assets/36de8512-acfd-44fb-bb1f-b7c793a3f926" width="45" height="30"></a>
+<a href="https://github.com/solvercaptcha/solvecaptcha-php"><img src="https://github.com/user-attachments/assets/c27d7db5-c20f-47c1-b252-96ee76503b9e" width="52" height="30"></a>
+<a href="https://github.com/solvercaptcha/solvecaptcha-java"><img src="https://github.com/user-attachments/assets/a3d923f6-4fec-4c07-ac50-e20da6370911" width="50" height="30"></a>
+<a href="https://github.com/solvercaptcha/solvecaptcha-csharp"><img src="https://github.com/user-attachments/assets/f4d449de-780b-49ed-bb0a-b70c82ec4b32" width="38" height="30"></a>
 
 # PHP Captcha Solver: Bypass reCAPTCHA, Cloudflare, hCaptcha, Amazon and more
 
@@ -104,7 +104,7 @@ composer require solvecaptcha/solvecaptcha
 Clone it manually:
 
 ```bash
-git clone https://github.com/solvecaptcha/solvecaptcha-php.git
+git clone https://github.com/solvercaptcha/solvecaptcha-php.git
 ```
 
 Copy `src` directory to your project and then `require` autoloader (`src/autoloader.php`) where needed:
@@ -169,7 +169,7 @@ $result = $solver->normal('path/to/captcha.jpg');
 
 ### Text Captcha
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#solving_text_captcha)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_text_captcha)</sup>
 
 This method can be used to bypass a captcha that requires to answer a question provided in clear text.
 
@@ -179,7 +179,7 @@ $result = $solver->text('If tomorrow is Saturday, what day is today?');
 
 ### reCAPTCHA v2
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#solving_recaptchav2_new)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_recaptchav2_new)</sup>
 
 Use this method to solve reCAPTCHA V2 and obtain a token to bypass the protection.
 
@@ -192,7 +192,7 @@ $result = $solver->recaptcha([
 
 ### reCAPTCHA v3
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#solving_recaptchav3)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_recaptchav3)</sup>
 
 This method provides reCAPTCHA V3 solver and returns a token.
 
@@ -206,7 +206,7 @@ $result = $solver->recaptcha([
 
 ### FunCaptcha
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#solving_funcaptcha_new)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_funcaptcha_new)</sup>
 
 FunCaptcha (Arkoselabs) solving method. Returns a token.
 
@@ -219,7 +219,7 @@ $result = $solver->funcaptcha([
 
 ### GeeTest
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#solving_geetest)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_geetest)</sup>
 
 Method to solve GeeTest puzzle captcha. Returns a set of tokens as JSON.
 
@@ -233,7 +233,7 @@ $result = $solver->geetest([
 
 ### GeeTest V4
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#geetest-v4)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_geetest_v4)</sup>
 
 Method to solve GeeTest V4 puzzle captcha. Returns a set of tokens as JSON.
 
@@ -246,7 +246,7 @@ $result = $solver->geetest_v4([
 
 ### KeyCaptcha
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#solving_keycaptcha)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_keycaptcha)</sup>
 
 Token-based method to solve KeyCaptcha.
 
@@ -262,8 +262,6 @@ $result = $solver->keycaptcha([
 
 ### Capy
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#solving_capy)</sup>
-
 Token-based method to bypass Capy puzzle captcha.
 
 ```php
@@ -276,7 +274,7 @@ $result = $solver->capy([
 
 ### Grid
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#grid)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_grid)</sup>
 
 Grid method is originally called Old reCAPTCHA V2 method. The method can be used to bypass any type of captcha where you can apply a grid on image and need to click specific grid boxes. Returns numbers of boxes.
 
@@ -286,7 +284,7 @@ $result = $solver->grid('path/to/captcha.jpg');
 
 ### Canvas
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#canvas)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#canvas)</sup>
 
 Canvas method can be used when you need to draw a line around an object on image. Returns a set of points' coordinates to draw a polygon.
 
@@ -296,7 +294,7 @@ $result = $solver->canvas('path/to/captcha.jpg');
 
 ### ClickCaptcha
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#coordinates)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#coordinates)</sup>
 
 ClickCaptcha method returns coordinates of points on captcha image. Can be used if you need to click on particular points on the image.
 
@@ -306,7 +304,7 @@ $result = $solver->coordinates('path/to/captcha.jpg');
 
 ### Rotate
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#solving_rotatecaptcha)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_rotatecaptcha)</sup>
 
 This method can be used to solve a captcha that asks to rotate an object. Mostly used to bypass FunCaptcha. Returns the rotation angle.
 
@@ -315,8 +313,6 @@ $result = $solver->rotate('path/to/captcha.jpg');
 ```
 
 ### Audio
-
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#audio)</sup>
 
 This method can be used to solve a audio captcha
 
@@ -337,8 +333,6 @@ $result = $solver->yandex([
 
 ### Lemin Cropped Captcha
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#lemin)</sup>
-
 Use this method to solve Lemin and obtain a token to bypass the protection.
 
 ```php
@@ -351,7 +345,7 @@ $result = $solver->lemin([
 
 ### Cloudflare Turnstile
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#turnstile)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_cloudflare_turnstile)</sup>
 
 Use this method to solve Turnstile and obtain a token to bypass the protection.
 
@@ -363,8 +357,6 @@ $result = $solver->turnstile([
 ```
 
 ### Amazon WAF
-
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#amazon-waf)</sup>
 
 Use this method to solve Amazon WAF and obtain a token to bypass the protection.
 
@@ -379,8 +371,6 @@ $result = $solver->amazon_waf([
 
 ### Tencent
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#tencent)</sup>
-
 Use this method to bypass Tencent.
 
 ```php
@@ -393,8 +383,6 @@ $result = $solver->tencent([
 
 ### MTCaptcha
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#mtcaptcha)</sup>
-
 Use this method to bypass MTCaptcha.
 
 ```php
@@ -405,8 +393,6 @@ $result = $solver->mt_captcha([
 ```
 
 ### Cutcaptcha
-
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#cutcaptcha)</sup>
 
 Use this method to bypass Cutcaptcha.
 
@@ -420,8 +406,6 @@ $result = $solver->cutcaptcha([
 
 ### Friendly Captcha
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#friendly-captcha)</sup>
-
 Use this method to bypass Friendly Captcha.
 
 ```php
@@ -432,8 +416,6 @@ $result = $solver->friendly_captcha([
 ```
 
 ### atbCAPTCHA
-
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#atb-captcha)</sup>
 
 Use this method to bypass atbCAPTCHA.
 
@@ -447,12 +429,10 @@ $result = $solver->atb_captcha([
 
 ### DataDome
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#datadome)</sup>
-
 Use this method to bypass DataDome.
 
 > [!IMPORTANT]
-> To solve the DataDome captcha, you must use a proxy. It is recommended to use [residential proxies].
+> To solve the DataDome captcha, you must use a proxy. It is recommended to use residential proxies.
 
 ```php
 $result = $solver->datadome([
@@ -467,8 +447,6 @@ $result = $solver->datadome([
 ```
 
 ### CyberSiARA
-
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#cybersiara)</sup>
 
 Use this method to bypass CyberSiARA.
 
@@ -494,7 +472,7 @@ $code = $solver->getResult($id);
 ```
 ### balance
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#additional-methods)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#additional)</sup>
 
 Use this method to get your account's balance
 
@@ -504,7 +482,7 @@ $balance = $solver->balance();
 
 ### report
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#complain)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#complain)</sup>
 
 Use this method to report good or bad captcha answer.
 
@@ -564,7 +542,7 @@ The code in this repository is licensed under the MIT License. See the [LICENSE]
 <!-- Shared links -->
 [solvecaptcha]: https://solvecaptcha.com/
 [post options]: https://solvecaptcha.com/captcha-solver-api#normal_post
-[list of supported languages]: https://solvecaptcha.com/solvecaptcha-api#language
+[list of supported languages]: https://solvecaptcha.com/captcha-solver-api#language
 [examples directory]: /examples
 [examples]: /examples
 [PHP captcha solver]: https://solvecaptcha.com/captcha-solver/php-captcha-solver-bypass
