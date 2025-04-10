@@ -99,18 +99,6 @@ This package can be installed via composer or manually
 composer require solvecaptcha/solvecaptcha
 ```
 
-Or, clone it manually:
-
-```bash
-git clone https://github.com/solvecaptcha/solvecaptcha-php.git
-```
-
-Then include the autoloader in your project:
-
-```php
-require 'path/to/solvecaptcha-php/src/autoloader.php';
-```
-
 ### Manual
 
 Clone it manually:
