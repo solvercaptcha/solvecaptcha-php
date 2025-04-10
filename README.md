@@ -563,7 +563,7 @@ The code in this repository is licensed under the MIT License. See the [LICENSE]
 
 <!-- Shared links -->
 [solvecaptcha]: https://solvecaptcha.com/
-[post options]: https://solvecaptcha.com/solvecaptcha-api#normal_post
+[post options]: https://solvecaptcha.com/captcha-solver-api#normal_post
 [list of supported languages]: https://solvecaptcha.com/solvecaptcha-api#language
 [examples directory]: /examples
 [examples]: /examples
