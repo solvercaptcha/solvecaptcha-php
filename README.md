@@ -159,7 +159,7 @@ Below you can find basic examples for every captcha type. Check out [examples di
 
 ### Normal Captcha
 
-<sup>[API method description.](https://solvecaptcha.com/solvecaptcha-api#solving_normal_captcha)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_normal_captcha)</sup>
 
 To bypass a normal captcha (distorted text on image) use the following method. This method also can be used to recognize any text on the image.
 
