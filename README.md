@@ -29,9 +29,9 @@ Helpful links:
 
 ### 🛠️ Features
 - Fast and fully automated captcha bypass
-- Native support for PHP 7.4+ / 8.x
-- Works with cURL, Guzzle, Symfony HTTP client, and any - REST-compatible tool
-- Easy integration with frameworks like Laravel, Symfony, - CodeIgniter
+- Native support for **PHP 7.4+ / 8.x**
+- Works with **cURL**, **Guzzle**, **Symfony HTTP client**, and any - REST-compatible tool
+- Easy integration with frameworks like **Laravel**, **Symfony**, **CodeIgniter**
 - Clean, promise-like async handling via callbacks or jobs
 - Pay only for successful solves
 - 99.9% uptime
