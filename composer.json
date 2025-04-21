@@ -1,7 +1,7 @@
 {
     "name": "solvercaptcha/solvecaptcha-php",
     "type": "library",
-    "description": "PHP package for easy integration with solvecaptcha API",
+    "description": "PHP package for easy integration with solvecaptcha API.",
     "homepage": "https://solvecaptcha.com/",
     "keywords": [
         "solvecaptcha",
