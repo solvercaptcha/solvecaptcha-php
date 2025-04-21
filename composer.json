@@ -1,6 +1,8 @@
 {
     "name": "solvercaptcha/solvecaptcha-php",
+    "type": "library",
     "description": "PHP package for easy integration with solvecaptcha API",
+    "homepage": "https://solvecaptcha.com/",
     "keywords": [
         "solvecaptcha",
         "captcha",
@@ -36,6 +38,12 @@
             "homepage": "https://solvecaptcha.com/"
         }
     ],
+    "support": {
+        "issues": "https://github.com/solvercaptcha/solvecaptcha-php/issues",
+        "source": "https://github.com/solvercaptcha/solvecaptcha-php",
+        "docs": "https://github.com/solvercaptcha/solvecaptcha-php/blob/main/README.md",
+        "email": "info@solvecaptcha.com"
+    },
     "require": {
         "php": ">=7.3",
         "ext-curl": "*",
@@ -57,5 +65,11 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/solvercaptcha/solvecaptcha-php"
+        }
+    ]
 }
