@@ -1,5 +1,5 @@
 {
-    "name": "solvecaptcha/solvecaptcha",
+    "name": "solvercaptcha/solvecaptcha-php",
     "description": "PHP package for easy integration with solvecaptcha API",
     "keywords": [
         "solvecaptcha",
