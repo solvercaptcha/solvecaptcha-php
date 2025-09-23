@@ -9,9 +9,9 @@
 <a href="https://github.com/solvercaptcha/solvecaptcha-java"><img src="https://github.com/user-attachments/assets/a3d923f6-4fec-4c07-ac50-e20da6370911" width="50" height="30"></a>
 <a href="https://github.com/solvercaptcha/solvecaptcha-csharp"><img src="https://github.com/user-attachments/assets/f4d449de-780b-49ed-bb0a-b70c82ec4b32" width="38" height="30"></a>
 
-# PHP Captcha Solver: Bypass reCAPTCHA, Cloudflare, hCaptcha, Amazon and more
+# PHP Captcha Solver: Bypass reCAPTCHA, Cloudflare, Amazon and more
 
-Use the [PHP captcha solver] to automatically bypass any captcha — including reCAPTCHA v2, Invisible, v3, Enterprise, hCaptcha, Cloudflare Turnstile, GeeTest, sliders, Amazon AWS WAF, FunCaptcha, and both image and text based captchas.
+Use the [PHP captcha solver] to automatically bypass any captcha — including reCAPTCHA v2, Invisible, v3, Enterprise,  Cloudflare Turnstile, GeeTest, sliders, Amazon AWS WAF, FunCaptcha, and both image and text based captchas.
 
 ## ✅ Supported captcha solvers
 To get started quickly, check out the [Captcha Solver API](https://solvecaptcha.com/captcha-solver-api) documentation.
@@ -19,7 +19,6 @@ To get started quickly, check out the [Captcha Solver API](https://solvecaptcha.
 Helpful links:
 - [reCAPTCHA v2 solver](https://solvecaptcha.com/captcha-solver/recaptcha-v2-solver-bypass)
 - [reCAPTCHA v3 solver](https://solvecaptcha.com/captcha-solver/recaptcha-v3-solver-bypass)
-- [hCaptcha solver](https://solvecaptcha.com/captcha-solver/hcaptcha-solver-bypass)
 - [Text and image captcha solver](https://solvecaptcha.com/captcha-solver/image-captcha-solver-bypass)
 - [Cloudflare captcha solver (Turnstile)](https://solvecaptcha.com/captcha-solver/cloudflare-captcha-solver-bypass)
 - [Amazon captcha solver (AWS WAF)](https://solvecaptcha.com/captcha-solver/amazon-captcha-solver-bypass)
@@ -47,7 +46,7 @@ Helpful links:
 
 Need help integrating with your PHP application? [Open an issue](https://github.com/solvercaptcha/solvecaptcha-php/issues) or fork this repo to contribute.
 
-- [PHP Captcha Solver: Bypass reCAPTCHA, Cloudflare, hCaptcha, Amazon and more](#php-captcha-solver-bypass-recaptcha-cloudflare-hcaptcha-amazon-and-more)
+- [PHP Captcha Solver: Bypass reCAPTCHA, Cloudflare, Amazon and more](#php-captcha-solver-bypass-recaptcha-cloudflare-amazon-and-more)
   - [Installation](#installation)
     - [Composer](#composer)
     - [Manual](#manual)
@@ -59,7 +58,6 @@ Need help integrating with your PHP application? [Open an issue](https://github.
     - [Text Captcha](#text-captcha)
     - [reCAPTCHA v2](#recaptcha-v2)
     - [reCAPTCHA v3](#recaptcha-v3)
-    - [hCaptcha](#hcaptcha)
     - [FunCaptcha](#funcaptcha)
     - [GeeTest](#geetest)
     - [GeeTest V4](#geetest-v4)
@@ -202,25 +200,6 @@ $result = $solver->recaptcha([
     'sitekey' => '6Le-wvkSVVABCPBMRTvw0Q4Muexq1bi0DJwx_mJ-',
     'url'     => 'https://mysite.com/page/with/recaptcha',
     'version' => 'v3',
-]);
-```
-
-### hCaptcha
-
-<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_hcaptcha)</sup>
-
-Use this method to solve hCaptcha and obtain a token to bypass the protection.
-
-```php
-$result = $solver->hcaptcha([
-    'sitekey'  => 'bf8ccfbf-6a05-45f6-982a-7a7964c2f50c',
-    'url'      => 'https://portalunico.siscomex.gov.br',
-    'invisible'=> 0,
-    'domain'   => 'hcaptcha.com',
-    // 'proxy' => [
-    //     'type' => 'HTTPS',
-    //     'uri'  => 'login:password@IP_address:PORT'
-    // ]
 ]);
 ```
 

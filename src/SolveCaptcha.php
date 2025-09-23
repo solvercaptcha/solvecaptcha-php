@@ -277,23 +277,6 @@ class SolveCaptcha
 
 
     /**
-     * Wrapper for solving hCaptcha
-     *
-     * @param $captcha
-     * @return \stdClass
-     * @throws ApiException
-     * @throws NetworkException
-     * @throws TimeoutException
-     * @throws ValidationException
-     */
-    public function hcaptcha($captcha)
-    {
-        $captcha['method'] = 'hcaptcha';
-
-        return $this->solve($captcha);
-    }
-
-    /**
      * Wrapper for solving Lemin
      *
      * @param $captcha
