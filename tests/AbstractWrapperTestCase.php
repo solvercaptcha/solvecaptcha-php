@@ -2,9 +2,9 @@
 
 namespace SolveCaptcha\Tests;
 
-use SolveCaptcha\ApiClient;
-use SolveCaptcha\Exception\ValidationException;
-use SolveCaptcha\SolveCaptcha;
+use TwoCaptcha\ApiClient;
+use TwoCaptcha\Exception\ValidationException;
+use TwoCaptcha\TwoCaptcha;
 use PHPUnit\Framework\TestCase;
 
 abstract class AbstractWrapperTestCase extends TestCase
@@ -44,7 +44,7 @@ abstract class AbstractWrapperTestCase extends TestCase
             ->with($this->equalTo(['action' => 'get', 'id' => $captchaId, 'key' => $apiKey, 'json' => $json]))
             ->willReturn('OK|' . $code);
 
-        $solver = new SolveCaptcha([
+        $solver = new TwoCaptcha([
             'apiKey' => $apiKey,
             'pollingInterval' => 1,
         ]);
@@ -66,7 +66,7 @@ abstract class AbstractWrapperTestCase extends TestCase
     {
         $this->expectException(ValidationException::class);
 
-        $solver = new SolveCaptcha('API_KEY');
+        $solver = new TwoCaptcha('API_KEY');
 
         $result = $solver->{$this->method}([
             'file' => 'non-existent-file',
@@ -87,7 +87,7 @@ abstract class AbstractWrapperTestCase extends TestCase
             $files[] = __DIR__ . '/../../examples/images/rotate.jpg';
         }
 
-        $solver = new SolveCaptcha('API_KEY');
+        $solver = new TwoCaptcha('API_KEY');
 
         $result = $solver->{$this->method}($files);
     }
