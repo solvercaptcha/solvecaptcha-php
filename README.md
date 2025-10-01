@@ -92,6 +92,8 @@ Need help integrating with your PHP application? [Open an issue](https://github.
 
 ## Installation
 This package can be installed via composer or manually
+- Download composer from https://getcomposer.org/installer to your project directory
+- Run `php composer.phar install` 
 
 ### Composer
 ```
