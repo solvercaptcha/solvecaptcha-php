@@ -127,6 +127,7 @@ $solver = new \SolveCaptcha\SolveCaptcha([
     'defaultTimeout'   => 120,
     'recaptchaTimeout' => 600,
     'pollingInterval'  => 10,
+    'json'             => 1,
 ]);
 ```
 
@@ -137,6 +138,8 @@ $solver = new \SolveCaptcha\SolveCaptcha([
 | defaultTimeout   | 120           | Polling timeout in seconds for all captcha types except reCAPTCHA. Defines how long the module tries to get the answer from `res.php` API endpoint |
 | recaptchaTimeout | 600           | Polling timeout for reCAPTCHA in seconds. Defines how long the module tries to get the answer from `res.php` API endpoint                          |
 | pollingInterval  | 10            | Interval in seconds between requests to `res.php` API endpoint, setting values less than 5 seconds is not recommended                              |
+| json             | 0             | Json or String format response from `res.php` API endpoint, json = 1 returns JSON format response                                                  |
+
 
 To get the answer manually use [getResult method](#send--getresult)
 
