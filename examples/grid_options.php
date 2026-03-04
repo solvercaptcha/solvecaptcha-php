@@ -5,9 +5,12 @@ set_time_limit(130);
 require(__DIR__ . '/../src/autoloader.php');
 
 $solver = new \SolveCaptcha\SolveCaptcha([
-    'apiKey'	=> 'YOUR_API_KEY',
+    'apiKey'	=> $argv[1],
     'server'	=> 'https://solvecaptcha.com'
 ]);
+
+$imginstructionsFile = __DIR__ . '/images/grid_hint.jpg';
+$imginstructionsFileBase64 = base64_encode(file_get_contents($imginstructionsFile));
 
 try {
     $result = $solver->grid([
@@ -17,8 +20,10 @@ try {
         'previousId' =>	0,
         'canSkip'    =>	0,
         'lang'       =>	'en',
-     // 'hintImg'    => __DIR__ . '/images/grid_hint.jpg',
-        'hintText'   =>	'Select all images with an Orange',
+        //'hintImg'    => __DIR__ . '/images/grid_hint.jpg',
+        'imginstructions' => $imginstructionsFileBase64,
+        'textinstructions'   =>	'Select all images with an Orange',
+        'recaptcha' => 1
     ]);
 } catch (\Exception $e) {
     die($e->getMessage());
