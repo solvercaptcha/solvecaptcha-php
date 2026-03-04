@@ -17,10 +17,8 @@ try {
         'file'       => __DIR__ . '/images/grid_2.jpg',
         'rows'       =>	3,
         'cols'       =>	3,
-        'previousId' =>	0,
-        'canSkip'    =>	0,
+        'previousId' =>	0,        
         'lang'       =>	'en',
-        //'hintImg'    => __DIR__ . '/images/grid_hint.jpg',
         'imginstructions' => $imginstructionsFileBase64,
         'textinstructions'   =>	'Select all images with an Orange',
         'recaptcha' => 1
