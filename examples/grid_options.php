@@ -20,7 +20,7 @@ try {
         'previousId' =>	0,        
         'lang'       =>	'en',
         'imginstructions' => $imginstructionsFileBase64,
-        'textinstructions'   =>	'Select all images with an Orange',
+        //'textinstructions'   =>	'Select all images with an Orange',
         'recaptcha' => 1
     ]);
 } catch (\Exception $e) {
