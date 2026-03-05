@@ -298,7 +298,7 @@ $result = $solver->canvas('path/to/captcha.jpg');
 
 ### ClickCaptcha
 
-<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_rotatecaptcha)</sup>
+<sup>[API method description.](https://solvecaptcha.com/captcha-solver-api#solving_clickcaptcha)</sup>
 
 ClickCaptcha method returns coordinates of points on captcha image. Can be used if you need to click on particular points on the image.
 
